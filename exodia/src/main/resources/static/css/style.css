@@ -1,0 +1,19 @@
+.bg-exodia {
+    background-color: #191970;
+}
+
+.text-exodia {
+    color: #191970;
+}
+
+.hr-2 {
+    height: 2px;
+}
+
+textarea {
+    resize: none;
+}
+.home-doc {
+    width: 16%;
+    margin: 2% 4% 2% 0%;
+}
