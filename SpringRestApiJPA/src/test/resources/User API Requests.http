@@ -1,0 +1,79 @@
+GET http://localhost:8080/api/users
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "firstName": "D",
+  "lastName": "Petrov",
+  "age": -1,
+  "username": "dimo5",
+  "password": "Dimo123",
+  "role": "ADMIN",
+  "phone": "+(359) 887 894356"
+}
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "FromPOST",
+  "username": "Post",
+  "password": "Post123#",
+  "gender": "MALE",
+  "role": "ADMIN",
+  "url": "https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest?cb=20150124180545",
+  "shortDescription": "description from POST ",
+  "status": "ACTIVE"
+}
+###
+PUT http://localhost:8080/api/users/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "FromUpdate",
+  "username": "Post",
+  "password": "Post123#",
+  "gender": "MALE",
+  "role": "ADMIN",
+  "url": "https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest?cb=20150124180545",
+  "shortDescription": "description from POST ",
+  "status": "ACTIVE"
+}
+###
+DELETE http://localhost:8080/api/users/1
+
+###
+
+GET http://localhost:8080/api/users/1
+Accept: application/json
+
+###
+GET http://localhost:8080/api/users/2/recipes/2
+Accept: application/json
+
+###
+###
+GET http://localhost:8080/api/users/2/recipes
+Accept: application/json
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+
+  "username": "Post",
+  "password": "Post123#",
+
+
+  "url": "https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest?cb=20150124180545",
+  "shortDescription": "description from POST ",
+  "status": "ACTIVE"
+}
